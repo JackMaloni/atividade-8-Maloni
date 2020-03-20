@@ -3,7 +3,7 @@ function calcula_imc(){
 var altura = document.imcForm.altura.value;
 var peso = document.imcForm.peso.value;
 var quadrado = (altura * altura);
-var calculo = (peso/quadrado);
+var calculo = Math.round(peso/quadrado);
 
 if(calculo<18.5){
 alert("VOCE ESTA MUITO MAGRO! FALA SEU MADRUGA! SEU IMC E: " + calculo);
