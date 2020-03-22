@@ -6,35 +6,33 @@ var quadrado = (altura * altura);
 var calculo = (peso/quadrado).toFixed(2);
 
 if(calculo<18.5){
-alert("VOCE ESTA MUITO MAGRO! FALA SEU MADRUGA! SEU IMC E: " + calculo);
+alert("VOCE ESTA MUITO MAGRO! FALA SEU MADRUGA! SEU IMC E = " + calculo);
 }
 else if(calculo>=18.5 && calculo<24.9){
-alert("VOCE ESTA NORMAL ESTA NA TRINCA(a). SEU IMC: " + calculo);
+alert("VOCE ESTA NORMAL ESTA NA TRINCA(a). SEU IMC E = " + calculo);
 }
 
 else if(calculo>=25 && calculo<29.9) {
-alert("FALA AI GORDINHO, FICA DE OLHO. SEU IMC: " + calculo);
+alert("FALA AI GORDINHO, FICA DE OLHO. SEU IMC E = " + calculo);
 }
 else if(calculo>=30 && calculo<39.9) {
-alert("ESTA OBESO, GORDO, REI MOMO, HIPOPoTAMO. SEU IMC: " + calculo);
+alert("ESTA OBESO, GORDO, REI MOMO, HIPOPoTAMO. SEU IMC E = " + calculo);
 }
 else if (calculo>40)
-alert("A OBESIDADE ESTA TENSA EM, PARTIU BARIaTRICA?. SEU IMC : " + calculo);
+alert("A OBESIDADE ESTA TENSA EM, PARTIU BARIaTRICA?. SEU IMC E = : " + calculo);
 }
 
 </script>
 
-<title>Atividade7</title>
+<title>Atividade 8 - IMC em JS</title>
 </head>
 
-<body>
-
+<body text="Green" bgcolor="black">
+<center><h1><font face="Jazz LET, fantasy">CALCULAR IMC - Atividade 8</font></h1><br /><hr>
 <form name="imcForm" id="imcForm" action="#">
-
-<p>
-Altura   (Exemplo 1.78)<br />
+<center><font size=6>Informe sua Altura</font><i><font size=2><br>(Exemplo 1.78)</i></font><br/ >
 <input type="text" id="altura" name="altura" />
-</p>
+
 
 <p>Peso  (Exemplo 95) <br />
 <input type="text" id="peso" name="peso" />
@@ -50,5 +48,5 @@ Masculino</label>
 Feminino</label>
 </p>
 <p><input name="Enviar" type="submit" value="Calcular" onclick="calcula_imc()" />
-</p>
+</center></p>
 </form>
