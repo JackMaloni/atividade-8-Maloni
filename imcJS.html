@@ -3,19 +3,19 @@ function calcula_imc(){
 var altura = document.imcForm.altura.value;
 var peso = document.imcForm.peso.value;
 var quadrado = (altura * altura);
-var calculo = (peso/quadrado).toFixed(2);
+var calculo = ((peso/quadrado).toFixed(2));
 
 if(calculo<18.5){
 alert("VOCE ESTA MUITO MAGRO! FALA SEU MADRUGA! SEU IMC E = " + calculo);
 }
-else if(calculo>=18.5 && calculo<24.9){
+else if(calculo>=18.5 && calculo<24.99){
 alert("VOCE ESTA NORMAL ESTA NA TRINCA(a). SEU IMC E = " + calculo);
 }
 
-else if(calculo>=25 && calculo<29.9) {
+else if(calculo>=25 && calculo<29.99) {
 alert("FALA AI GORDINHO, FICA DE OLHO. SEU IMC E = " + calculo);
 }
-else if(calculo>=30 && calculo<39.9) {
+else if(calculo>=30 && calculo<39.99) {
 alert("ESTA OBESO, GORDO, REI MOMO, HIPOPoTAMO. SEU IMC E = " + calculo);
 }
 else if (calculo>40)
@@ -34,9 +34,10 @@ alert("A OBESIDADE ESTA TENSA EM, PARTIU BARIaTRICA?. SEU IMC E = : " + calculo)
 <input type="text" id="altura" name="altura" />
 
 
-<p>Peso  (Exemplo 95) <br />
+<p><font size=6>Informe seu peso</font><i><font size=2><br>(Exemplo 95)</i></font><br />
 <input type="text" id="peso" name="peso" />
 </p>
+
 
 <p>
 <label>
